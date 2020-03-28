@@ -146,7 +146,6 @@ function getMySQL(user, cmd) {
 }
 
 // sendRcon
-// Example: sendRcon("localhost", "ModdagebeatsTitanTF", "status", "27018");
 function sendRcon(ip, password, cmd, port, msg) {
   // test if values exist and are valid
   if (!ip || ip == "") return;
