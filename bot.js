@@ -16,6 +16,7 @@ bot.on("ready", () => {
 })
 
 bot.on("message", (message) => {
+  if(message.channel.type === "dm") return;
   if(message.author.type === "bot") return;
 
   let args = message.content.split(" ");
